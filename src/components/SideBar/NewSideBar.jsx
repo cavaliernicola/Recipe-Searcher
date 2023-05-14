@@ -40,10 +40,13 @@ export default function SideBar() {
   }
   
   return (
-    // By default pro-side-bar does not allow to have the content of the sidebar fixed on scroll which would be a bad UI in our case 
+    // By default pro-side-bar does not allow to have the content of the sidebar fixed on scroll, which would be a bad UI in our case 
     // since we can have long content in RecipeDetails scene, therefore we workaround that by wrapping the content of the SideBar in a fixed div
     // and dynamically change the width taken by the sidebar, the sidebar transition is the same of its container so the "magic" behind it is not noticeable.
-    <div style={{ marginRight: (broken ? "0" : !collapsed ? "250px" : "80px"), transition: "0.5s"}}>
+
+    // NOTE: we set transition: "none" on broken (which means small device and therefore sidebar not shown) to mitigate a pro-side-bar issue with initial render: https://github.com/azouaoui-med/react-pro-sidebar/issues/155
+    // A quick transition should make the visual issue less noticeable.
+    <div style={{ marginRight: (broken ? "0" : !collapsed ? "250px" : "80px"), transition: (broken ? "none" : "0.5s")}}> 
       <div style={{ position: "fixed", zIndex: "1000"}}>
         <Sidebar breakPoint="md" transitionDuration={500}>
           <Menu iconShape="square">
