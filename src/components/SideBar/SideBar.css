@@ -1,0 +1,44 @@
+
+
+/*------------------------------
+FOR VERSION 0.7.1 AND LOWER 
+-------------------------------*/
+
+/* .pro-menu {
+  height: 100vh;
+}
+
+.pro-sidebar {
+  position: fixed !important;
+  background: white;
+}
+
+.pro-sidebar > .pro-sidebar-inner {
+  background: none !important;
+  border-right: 1px solid gainsboro !important;
+}
+
+.pro-icon-wrapper {
+  background: transparent !important;
+} */
+
+
+/*----------------------------------
+  FOR VERSION 1.0 AND HIGHER
+-----------------------------------*/
+.menu-icon { 
+  color: green;
+}
+
+.collapsed {
+  margin-left: 20px;
+}
+
+.ps-sidebar-container {
+  background-color: white !important;
+  height: 100vh !important;
+}
+
+.ps-menu-button {
+  outline: none !important;
+}

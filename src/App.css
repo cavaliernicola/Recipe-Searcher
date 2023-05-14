@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app,
+.content {
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+.content {
+  overflow-x: hidden;
+  padding-bottom: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.general-header {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.general-note {
+  text-align: center;
+}
+
+/* This is just a photo to make the page look like less empty */
+.empty-content {
+  margin-top: 20px;
+  height: 400px;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+} 

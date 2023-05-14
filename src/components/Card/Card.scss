@@ -1,0 +1,123 @@
+@mixin round-buttons-template {
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin square-buttons-container {
+  display: flex;
+  min-width: 80px;
+  height: 35px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card {
+  width: 400px;
+  max-width: 100%;
+
+  .content-container {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .favorite-container {
+      @include round-buttons-template;
+      top: 5px;
+      right: 5px;
+
+      .icon {
+        font-size: 22px;
+        stroke: black;
+        color: white;
+        stroke-width: 2px;
+      }
+
+      & .selected {
+        stroke-width: 1.2px;
+        color: rgb(210, 29, 29);
+      } 
+    }
+
+    .info-container {
+      @include round-buttons-template;
+      top: 5px;
+      left: 5px;
+
+      .icon {
+        color: black;
+      }
+    }
+
+    .extended-info-container {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      cursor: pointer;
+
+      .cooking-info {
+        @include square-buttons-container;
+      }
+
+      .serving-info {
+        margin-top: 2px;
+        @include square-buttons-container;
+      }
+
+      .title {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .icon {
+        margin-right: 5px;
+      }
+    }
+  }
+  
+  .card-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+// Used when there are multiple cards
+.cards-container { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  padding: 20px;
+
+  .card {
+    justify-self: center;
+  }
+}
+
+// Used when there is a single card 
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  
+  .card {
+    width: 600px;
+    
+    .content-container {
+      height: 300px;
+    }
+  }
+}

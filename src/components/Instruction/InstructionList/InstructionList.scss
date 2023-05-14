@@ -1,0 +1,32 @@
+.instructions-list {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+  border: 3px grey;
+  border-style:dashed;
+  width: fit-content;
+  max-width: 95%;
+  margin: 0 auto;
+
+  .instruction-container {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  
+    .instruction-step {
+      &.checked  {
+        text-decoration: line-through;
+      }
+    }
+
+    .instruction-button {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-right: 10px;
+      }
+    }
+  }
+}

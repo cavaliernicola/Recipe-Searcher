@@ -1,0 +1,36 @@
+.paragraph-title {
+  padding: 10px 0px 10px 20px;
+  margin: 20px 0px;
+  /* background: linear-gradient(90deg, rgba(239,247,230,1) 0%, rgba(186,229,192,1) 100%); */
+  background: rgba(239,247,230,1);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.recipe-title {
+  text-decoration: overline;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Varela Round', sans-serif;
+  width: 100%;
+}
+
+.recipe-summary {
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.recipe-summary > a {
+  text-decoration: none;
+}
+
+
+.recipe-header {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 439px) {
+  .recipe-title {
+    font-size: 20px;
+  }
+}
