@@ -1,4 +1,4 @@
-# Book Searcher
+# Recipe Searcher
 
 ## Table of Contents
 * [Description](#description)
