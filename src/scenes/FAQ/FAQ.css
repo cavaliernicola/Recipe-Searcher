@@ -4,7 +4,7 @@
   border: 1px solid black;
 }
 
-.accordion > a {
+.accordion-link {
   text-decoration: none;
-  color: red;
+  color: red; 
 }

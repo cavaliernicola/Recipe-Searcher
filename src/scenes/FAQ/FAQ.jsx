@@ -14,7 +14,7 @@ export default function FAQ() {
           <h3>Why I see "An error happened"?</h3>
         </AccordionSummary>
         <AccordionDetails>
-          <p>This app uses free plan of <a href="https://spoonacular.com/food-api/docs">Spoonacular Api</a>, and it has a limited api usage, if you see such banner it's likely that the app hit the limit already.</p>
+          <p>This app uses free plan of <a href="https://spoonacular.com/food-api/docs" target="_blank" rel="noopener noreferrer" className="accordion-link">Spoonacular Api</a>, and it has a limited api usage, if you see such banner it's likely that the app hit the limit already.</p>
         </AccordionDetails>
       </Accordion>
       
@@ -41,7 +41,7 @@ export default function FAQ() {
           <h3>Where can I report bugs/suggest new features?</h3>
         </AccordionSummary>
         <AccordionDetails>
-          <p>This project is open source, you can open an issue in the dedicated <a href="https://github.com/cavaliernicola/Recipe-Searcher" target="_blank" rel="noopener noreferrer">github page</a>.</p>
+          <p>This project is open source, you can open an issue in the dedicated <a href="https://github.com/cavaliernicola/Recipe-Searcher" target="_blank" rel="noopener noreferrer" className="accordion-link">github page</a>.</p>
         </AccordionDetails>
       </Accordion>
 
@@ -50,7 +50,7 @@ export default function FAQ() {
           <h3>Who made this application?</h3>
         </AccordionSummary>
         <AccordionDetails>
-          <p>This application was made by <a href="https://cavaliernicola.github.io/Personal-Website" target="_blank" rel="noopener noreferrer">Nicola Cavalier</a> with the only purpose to practice React, a popular Javascript Library.</p>
+          <p>This application was made by <a href="https://cavaliernicola.github.io/Personal-Website" target="_blank" rel="noopener noreferrer" className="accordion-link">Nicola Cavalier</a> with the only purpose to practice React, a popular Javascript Library.</p>
         </AccordionDetails>
       </Accordion>
     </>
