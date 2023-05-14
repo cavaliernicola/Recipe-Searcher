@@ -23,8 +23,9 @@ export default function IngredientList({ recipe }) {
         <>
           <h2 className="paragraph-title">Ingredients</h2>
           <div className={"ingredients-list" + (!scrollbar ? " scroll-bar-hidden" : "")} >
-            {recipe?.extendedIngredients?.map((ingredient) => (
-              <IngredientItem key={ingredient.id} {...ingredient} />
+            {recipe?.extendedIngredients?.map((ingredient, index) => (
+              // we can't use ingredient.id as key because it's not reliable to be unique, as it happens for /recipe/642548
+              <IngredientItem key={index} {...ingredient} />
             ))}
           </div>
         </>

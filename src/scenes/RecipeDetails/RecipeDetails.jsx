@@ -34,10 +34,8 @@ export default function RecipeDetails() {
 
   return (
     <> 
-      <div className="recipe-header">
-        <IconButton onClick={() => navigate(-1) }><ArrowBackOutlinedIcon /></IconButton>
-        <h1 className="recipe-title">{recipe.title}</h1>
-      </div>
+      <IconButton style={{ marginLeft: "20px" }} onClick={() => navigate(-1) }><ArrowBackOutlinedIcon /></IconButton>
+      <h1 className="recipe-title">{recipe.title}</h1>
 
       <div className="card-container">
         <Card {...recipe} item={recipe} isDetailed={true}/>
