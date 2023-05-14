@@ -44,8 +44,9 @@ export default function SideBar() {
     // since we can have long content in RecipeDetails scene, therefore we workaround that by wrapping the content of the SideBar in a fixed div
     // and dynamically change the width taken by the sidebar, the sidebar transition is the same of its container so the "magic" behind it is not noticeable.
 
-    // NOTE: we set transition: "none" on broken (which means small device and therefore sidebar not shown) to mitigate a pro-side-bar issue with initial render: https://github.com/azouaoui-med/react-pro-sidebar/issues/155
-    // A quick transition should make the visual issue less noticeable.
+    // NOTE: we set transition: "none" when broken (which means small device and therefore sidebar not shown) to mitigate a pro-side-bar issue with initial render: https://github.com/azouaoui-med/react-pro-sidebar/issues/155
+    // which incorrectly show the sidebar open and then it quickly close it. A quick transition should be less annoying than a moving UI.
+    // this is not our bug and it has to be addressed to the third-party component we are using. Since it's not a big issue it will stay like this until the new update will be released. 
     <div style={{ marginRight: (broken ? "0" : !collapsed ? "250px" : "80px"), transition: (broken ? "none" : "0.5s")}}> 
       <div style={{ position: "fixed", zIndex: "1000"}}>
         <Sidebar breakPoint="md" transitionDuration={500}>
