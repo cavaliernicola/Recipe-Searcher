@@ -8,7 +8,7 @@ import AccessAlarmOutlinedIcon from '@mui/icons-material/AccessAlarmOutlined';
 
 import { useGlobalContext } from '../../context/GlobalContext';
 import "./Card.scss";
-import placeholder from "../../assets/img/no-image-placeholder-2.png";
+import placeholder from "../../assets/img/no-image-placeholder.png";
 import { useNavigate } from 'react-router-dom';
 
 export default function Card({image, id, title, servings, readyInMinutes, item, isDetailed = false}) {
