@@ -1,0 +1,10 @@
+.accordion {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  border: 1px solid black;
+}
+
+.accordion > a {
+  text-decoration: none;
+  color: red;
+}
