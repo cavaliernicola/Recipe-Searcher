@@ -37,6 +37,8 @@ First of all, you need Node.js installed, you can download it [here](https://nod
 1. Set your own `VITE_API_KEY` on `.env` file
 1. Build the app: `npm run build`
 
+*Make sure to run production build and not development, otherwise you might expected unwanted re-render due to live compiling.*
+
 ## Try It!
 You can try this app [HERE](https://taupe-tapioca-b5f2c0.netlify.app/)!
 
