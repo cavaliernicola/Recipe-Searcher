@@ -37,7 +37,7 @@ First of all, you need Node.js installed, you can download it [here](https://nod
 1. Set your own `VITE_API_KEY` on `.env` file
 1. Build the app: `npm run build`
 
-*Make sure to run production build and not development, otherwise you might experience unwanted re-render due to live compiling.*
+*Make sure to run production build and not development, otherwise you might experience [unwanted](https://stackoverflow.com/a/61897567) re-render, unless you remove <React.StrictMode> from [main.jsx][https://github.com/cavaliernicola/Recipe-Searcher/blob/f8ddfbaaca6734eb6cf1d8eef2d9aca6cf764079/src/main.jsx#L8]*
 
 ## Try It!
 You can try this app [HERE](https://taupe-tapioca-b5f2c0.netlify.app/)!
